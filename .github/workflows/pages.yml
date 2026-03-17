@@ -1,16 +1,6 @@
 name: deploy-snowflake-rbac-map-pages
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - 'index.html'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'vite.config.ts'
-      - '.github/workflows/pages.yml'
-  workflow_dispatch:
+on: [push]
 
 permissions:
   contents: read
